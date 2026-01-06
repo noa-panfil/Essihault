@@ -180,7 +180,7 @@ export default function Home() {
             />
 
             {/* Hero Section */}
-            <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-essihault-dark">
+            <section className="relative min-h-[80vh] py-20 flex items-center justify-center overflow-hidden bg-essihault-dark">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
                     <div className="w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-essihault-purple/30 via-black to-black" />
@@ -190,7 +190,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[url('/img/grid.svg')] opacity-10 z-0 pointer-events-none"></div>
 
                 <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
-                    <div className="mb-6 inline-block px-6 py-2 rounded-full border border-essihault-purple/50 bg-essihault-purple/10 text-essihault-purple text-sm font-bold tracking-widest uppercase animate-fade-in-up backdrop-blur-md">
+                    <div className="mb-6 inline-block px-6 py-2 rounded-full border border-essihault-purple/50 bg-essihault-purple/10 text-essihault-purple text-sm font-bold tracking-widest uppercase backdrop-blur-md">
                         Algorithme v2.0 Actif
                     </div>
 
@@ -204,7 +204,7 @@ export default function Home() {
                         Dominez les SERP Google 2026 par l'intelligence cognitive.
                     </h2>
 
-                    <div className="flex flex-wrap gap-6 justify-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                    <div className="flex flex-wrap gap-6 justify-center">
                         <a href="#articles" className="px-10 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] border-2 border-white">
                             Découvrir la Stratégie
                         </a>
