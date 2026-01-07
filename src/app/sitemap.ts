@@ -1,6 +1,14 @@
 import { MetadataRoute } from 'next';
+import { ARTICLES } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+    const articles = ARTICLES.map((article) => ({
+        url: `https://noa-panfil.cloud/articles/${article.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.9,
+    }));
+
     return [
         {
             url: 'https://noa-panfil.cloud',
@@ -20,5 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 0.5,
         },
+        ...articles,
     ];
 }
